@@ -1,0 +1,394 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  animation: gradientAnimation 5s linear infinite;
+  background-size: 400% 400%;
+  background-image: linear-gradient(45deg, #ff8410, #f94de2, #ff8410, #f94de2);
+}
+
+main {
+  flex: 1;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  header {
+    padding: 0.595vw 0; 
+  }
+
+  .content-container {
+    flex-direction: column; 
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .text-box {
+    margin: 0.595vw; 
+  }
+
+header {
+  background-color: white;
+  padding: 1.190vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 2.976vw;
+  margin: -0.595vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin-right: 1.190vw;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #ff1ae0;
+}
+
+#content {
+  padding: 1.190vw;
+  overflow: auto;
+}
+
+#content {
+  padding: 1.190vw;
+  overflow: auto;
+  text-align: center;
+}
+
+#title-left {
+  border-top-right-radius: 1.190vw;
+  border-bottom-right-radius: 0;
+  text-align: left;
+  padding-left: 2.381vw;
+  position: absolute;
+  top: 4.762vw;
+  left: 0;
+  width: 32%;
+  background: white;
+}
+
+#title-right {
+  border-top-left-radius: 1.190vw;
+  border-bottom-left-radius: 0;
+  text-align: left;
+  padding-left: 1.190vw;
+  position: absolute;
+  top: 4.762vw;
+  right: 0;
+  width: 45%;
+  background: white;
+}
+
+.title {
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.left-content {
+  width: 50%;
+  text-align: left;
+}
+
+.right-content {
+  width: 50%;
+  text-align: right;
+}
+
+.small-image {
+  max-width: 100%;
+  display: block;
+  margin-top: 2.381vw;
+  max-height: 13.690vw;
+  transition: transform 0.3s;
+}
+
+.small-image:hover {
+  transform: scale(1.1);
+}
+
+.text-box {
+  background: white;
+  padding: 1.190vw;
+  margin: 4.167vw;
+  text-align: left;
+  transition: all 0.3s;
+  color: black;
+}
+
+.info-button {
+  display: inline-block;
+  padding: 0.595vw 1.190vw;
+  text-decoration: none;
+  background: linear-gradient(rgb(40, 215, 234), #75f6ff);
+  color: white;
+  border-radius: 0.298vw;
+  transition: all 0.3s;
+}
+
+.info-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(#0eb3b0, #19b3f5);
+}
+
+footer {
+  background-color: white;
+  padding: 1.190vw 0;
+  text-align: center;
+  width: 100%;
+}
+
+#title-faq {
+  background: white;
+  padding: 0.595vw;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-box {
+  background: white;
+  padding: 1.190vw;
+  margin: 1.190vw 0;
+  width: 70%;
+  text-align: center;
+  border-radius: 0.298vw;
+  box-shadow: 0vw 0vw 0.595vw rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.faq-box:hover {
+  transform: scale(1.05);
+}
+
+.faq-box h2 {
+  font-size: 1.429vw;
+  margin-bottom: 0.595vw;
+}
+
+.faq-box p {
+  font-size: 0.952vw;
+}
+
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.190vw;
+}
+
+.service-table th, .service-table td {
+  border: 0.060vw solid #ddd;
+  padding: 0.476vw;
+  text-align: left;
+}
+
+.service-table th {
+  background-color: #f94de2;
+  color: white;
+}
+
+.dropdown {
+  position: absolute;
+  top: -100;
+  left: 0;
+  z-index: 2;
+  padding: 0.595vw 1.190vw;
+}
+
+.dropdown.open + .overlay {
+  display: block;
+}
+
+.dropbtn {
+  background-color: #ff1ae0;
+  color: white;
+  padding: 0.595vw 1.190vw;
+  border: none;
+  border-radius: 0.298vw;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 9.524vw;
+  box-shadow: 0vw 0.476vw 0.952vw 0vw rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.714vw 0.952vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff1ae0;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; 
+  z-index: 2; 
+  display: none; 
+}
+
+
+body.review-page {
+  background-color: #f5f5f5;
+}
+
+.review-form {
+  max-width: 35.714vw;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.190vw;
+  border-radius: 0.476vw;
+  box-shadow: 0 0 0.595vw rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 0.476vw;
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select {
+  width: 100%;
+  padding: 0.476vw;
+  margin-bottom: 0.952vw;
+  box-sizing: border-box;
+}
+
+.review-form button {
+  background-color: #333;
+  color: white;
+  padding: 0.595vw 1.190vw;
+  border: none;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #555;
+}
+
+body.hiring-driving #content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+body.hiring-driving .info-left {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 1.190vw;
+}
+
+body.hiring-driving .info-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+body.hiring-driving .reviews {
+  display: flex;
+  flex-direction: column;
+  max-width: 23.810vw;
+}
+
+body.hiring-driving .review-box {
+  background-color: #f9f9f9;
+  padding: 0.595vw;
+  margin-bottom: 0.595vw;
+  align-self: flex-end;
+}
+
+#video-wrapper {
+  transform: translate(10%, -35%);
+  padding-bottom: 56.25%; 
+  float: left;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body.text-box {
+  transform: translate(0%, -63%);
+}
+.text-box:hover {
+  transform: scale(1.1);
+}
