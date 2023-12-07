@@ -374,7 +374,7 @@ body.hiring-driving .review-box {
 
 #video-wrapper {
   transform: translate(10%, -35%);
-  padding-bottom: 56.25%; 
+  margin-top: -20%;
   float: left;
 }
 
@@ -392,3 +392,5 @@ body.text-box {
 .text-box:hover {
   transform: scale(1.1);
 }
+
+
